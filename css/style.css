@@ -1,0 +1,439 @@
+body {
+    background-color: #333333;
+    color: #bdbdbd;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+}
+
+/* - All links (lighter coloring for higher contrast with dark mode) */
+a {
+    color: #1f8ae6;
+}
+a:hover, a:focus {
+    color: #29f;
+}
+
+/* - All horizontal rules have been made darker to match the theme */
+hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Main page content headers */
+.page-header {
+    margin-top: 0;
+    border-bottom: transparent;
+}
+
+@media (min-width: 768px) {
+    .page-header h1 {
+        margin-top: 0 !important;
+    }
+}
+
+/* Main navigation */
+/* - Set a dark colour for background and border */
+.navbar-default {
+    background-color: #212121;
+    border-color: #212121;
+}
+
+/* - Re-color the text next to the navbar brand image */
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    color: #d2cfcf;
+}
+
+/* - Position the logo in relation to the navbar-brand text */
+.navbar-brand img {
+    margin-top: -6px;
+    margin-right: 8px;
+    margin-bottom: -11px;
+    float: left;
+    color: #fff;
+}
+
+/* - Tweak navbar item hover and focus colors */
+.navbar .navbar-nav > li:not(.active) > a:hover,
+.navbar .navbar-nav > li:not(.active) > a:focus {
+    color: #d2cfcf;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* - Tweak navbar active item colors */
+.navbar-default .navbar-nav > .active > a,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+    color: #d2cfcf;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* - Match active navbar item's color to hovering and focusing */
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #d2cfcf;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Collapsed navbar dropdown and button */
+/* - Spacer lines between the vertically arranged submenus */
+.dropdown-menu .divider {
+    background-color: #2f2f2f;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #212121 !important;
+}
+
+/* Footer items */
+.nav > li > a {
+    color: #cecece;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    color: #fff;
+    background-color: #212121 !important;
+}
+
+/* Jumbotron */
+/* - Reduce overall size of jumbotron subheads
+   - Add a pattern background overlay to all sizes */
+.jumbotron {
+    position: relative;
+    color: #fff;
+    background: #1c1c1c;
+    -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+       -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+            box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron:after {
+    background: url("../img/grid-15px.png") repeat scroll center center transparent;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+}
+
+.jumbotron.subhead .lead {
+    margin-bottom: 10px;
+}
+.jumbotron.subhead h1 .lead {
+    display: inline-block;
+    margin-bottom: 0 !important;
+}
+.jumbotron.subhead h1 {
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .jumbotron.subhead {
+        padding: 30px 40px 20px;
+    }
+    .jumbotron.subhead h1 {
+        font-size: 45px;
+    }
+    .jumbotron.subhead .lead {
+        font-size: 20px;
+    }
+
+    .jumbotron.subhead h1 .lead {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .jumbotron.subhead {
+        padding: 24px 30px 14px;
+    }
+    .jumbotron.subhead .lead {
+        font-size: 18px;
+    }
+
+    .jumbotron.subhead h1 .lead {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+/* Lower the contrast for labels's content */
+.label {
+    color: #d4d4d4;
+}
+
+/* Sidebar navigation */
+.subnav-btn {
+    float: none !important;
+}
+
+.docs-nav-pills > ul > li > a,
+.docs-nav-pills > li > a {
+    position: relative;
+    display: block;
+    padding: 3px 10px;
+    color: #cecece;
+}
+
+.docs-nav-pills > li > a:hover,
+.docs-nav-pills > li > a:focus {
+    color: #fff;
+    background-color: #212121;
+}
+
+.docs-nav-pills h4 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 8px 0px;
+}
+
+.dropdown-menu > li > a {
+    color: #cecece;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu {
+    background-color: #212121;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+    color: #fff;
+    background-color: #212121;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: rgba(255,255,255,0.31);
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 10px 8px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.table thead > tr > th {
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td {
+    border-top: 1px solid #1c1c1c;
+}
+
+/* Remove white borders from responsive tables */
+.table-responsive {
+    border: 0;
+}
+
+/* Odd table rows color */
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Even table rows and table's bottom line color */
+.table-striped > tbody {
+    border-bottom: 1px solid #212121;
+    background-color: #262626;
+}
+
+/* Material table styling */
+#blocks #dataTable tr td.data {
+    text-align: right;
+}
+
+/* Custom dynamic button style */
+/* - Currently used for collapsible example buttons
+   - Title changes from "More Examples" to "Less Examples" and vs versa */
+a.btn-more.collapsed:before {
+    content: "More ";
+}
+
+a.btn-more:before {
+    content: "Less ";
+}
+
+/* Elements with this attribute will show a scrollbar if they overflow their parent */
+.scroll {
+    overflow: auto;
+}
+
+/* Changelog list styling */
+ul.changelog {
+    list-style: none;
+    padding-left: 80px;
+}
+
+ul.changelog li {
+    margin-bottom: 10px;
+}
+
+ul.changelog .label {
+    margin-left: -80px;
+    margin-top: 3px;
+    float: left;
+}
+
+/* Misc */
+code {
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #e2184a;
+    padding: 1px 4px;
+}
+
+td pre {
+    margin-bottom: 0;
+    display: inline-block;
+    border: none;
+    padding: 1px 0;
+}
+
+td pre code {
+    margin: 0 4px;
+    white-space: nowrap;
+}
+
+.tomorrow-aqua,
+pre .variable,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo,
+span.highlight .variable,
+span.highlight .tag,
+span.highlight .regexp,
+span.highlight .ruby .constant,
+span.highlight .xml .tag .title,
+span.highlight .xml .doctype,
+span.highlight .html .doctype,
+span.highlight .css .id,
+span.highlight .css .class,
+span.highlight .css .pseudo {
+    color: #4bb8bf;
+}
+
+pre {
+    color: #b6b9b4;
+    background-color: #212121;
+    border: 1px solid #1f1f1f;
+}
+
+.right-ref-link {
+    float: right;
+    margin-left: 8px;
+}
+.left-ref-link {
+    float: left;
+    margin-right: 8px;
+}
+
+
+.docs-footer {
+    margin-bottom: 20px;
+}
+
+
+/* Custom alert styles */
+.alert.alert-small {
+    padding: 5px 7px 4px 7px;
+}
+
+.alert .fa.fa-2x {
+    margin: 5px;
+    float: left;
+}
+
+.alert .alert-content {
+    margin: 0px;
+    padding-left: 48px;
+}
+
+.alert-success p a {
+    color: #2b542c
+}
+.alert-info p a {
+    color: #245269
+}
+.alert-warning p a {
+    color: #66512c
+}
+.alert-danger p a {
+    color: #843534
+}
+
+.well {
+    background-color: #212121 !important;
+    border: 1px solid #212121 !important;
+}
+
+/* Item searching area */
+/* - Text area form field */
+.form-control {
+    background-color: #1c1c1c;
+    border-color: transparent;
+    color: #fff;
+}
+
+/* - Text area form field's suffix for search results's number */
+.input-group-addon {
+    background-color: #1c1c1c;
+    border-color: transparent;
+    color: #b6b9b4;
+}
+
+/* Make code boxes automatically scroll instead of wrapping when the screen is under this width */
+@media screen and (max-width:767px) {
+    pre {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    pre code {
+        width: 100%;
+        max-width: 100%;
+        overflow: auto;
+        overflow-wrap: normal;
+        white-space: pre;
+    }
+}
